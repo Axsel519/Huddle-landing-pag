@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Font-size: 18px;
+    --font-weigt:700;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+h1, h2,p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--Very-Dark-Cyan);
+}
+
+
+.top-page{
+    background-image: url("huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Very-Pale-Cyan);
+    padding: 5vh 4vw;
+}
+
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    background-color: white;
+    padding: 2vh 2vw;
+    min-width: 10vw;
+    max-width: 50vw;
+    border-radius: 5vw;
+    border: 1px solid;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px;
+    cursor: pointer;
+    width: auto;
+}
+
+button:active{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.middle-top {
+    padding-top: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.text-top {
+    padding-right: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
+    max-width: 100%;
+}
+
+.button-text button,.question-button button{
+    background-color: var(--Pink);
+    padding: 3vh 3vw;
+    color: white    ;
+}
+
+.button-text button:active , 
+.question-button button:active{
+    background-color: hsl(322deg 100% 66% / 53%);
+
+}
+
+
+.middle-image img{
+    width: 50vw;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 10vw;
+}
+
+.card img{
+    width: 30vw;
+}
+
+.card p{
+    color: var(--Grayish-Blue);
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vh 5vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 2vw;
+    border-radius: 1vw;
+}
+
+.card-text {
+    padding: 0vh 5vw;
+}
+
+.card2 .card {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.question {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    max-width: 55vw;
+    margin-left: 25vw;
+    border-radius: 1vw;
+    padding: 6vh 1vw;
+    position: relative;
+    background-color: white;
+}
+
+.bottom {
+    background-color: var(--Very-Dark-Cyan);
+    padding: 10vh 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--Very-Pale-Cyan);
+    margin-top: -22vh;
+
+}
+
+.bottom p{
+    color: white;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding-top: 20vh;
+    padding-right: 5vw;
+}
+
+.location, .phone, .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 35vw;
+}
+
+.location img,
+.phone img,
+.email img {
+    padding-right:2vw ;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20vh;
+    cursor: pointer;
+
+}
+
+.links small:active{
+    text-decoration: underline;
+
+}
+
+.left,.right {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10vw;
+    gap: 5vh;
+}
+
+
+.Social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.Social-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+
+.Social-circle:active{
+    color: var(--Pink);
+    border: 2px solid var(--Pink);
+    
+}
+
+@media screen and (max-width: 767px)  {
+
+    body{
+        width: 100%;
+    }
+
+    h1{
+        font-size: var(--font-weigt);
+        width:100%;
+    }
+
+    .top-page {
+        background-image: url("huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-mobile.svg");
+    }
+
+    .middle-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle-image img {
+        padding-top: 10vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card2 .card {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .question {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 73vw;
+        margin-left: 12vw;
+        position: relative;
+        width: auto;
+        text-align: center;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 5vh;
+        gap: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .Social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1vh 30vw;
+    }
+
+    .location, .phone, .email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        min-width: 90vw;
+    }
+
+    
+}
